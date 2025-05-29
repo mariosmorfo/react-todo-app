@@ -2,6 +2,7 @@ import { useState } from "react";
 import {Trash2, Edit, Save, X, Square, CheckSquare} from "lucide-react";
 import type { TodoListProps } from "../types.ts";
 
+
 const TodoList = ({todos, dispatch}: TodoListProps) =>{
 const [editId, setEditId] = useState<number | null>(null);
 const [editText, setEditText] = useState("");
